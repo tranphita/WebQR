@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<h1>About game</h1>
+
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">About game</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead">Nội dung về game sẽ hiển thị ở đây</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">Nội dung về game sẽ hiển thị ở đây</p></div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="text-center">
+        <h4 class="text-center text-white">
+            Scan QR code to confirm you passed next round!
+        </h4>
+        <br />
+        <a class="btn btn-xl btn-outline-light" id="btn-scan-qr">
+            <i class="fas fa-download me-2"></i>
+            Scan QR code v2
+        </a>
+        <canvas hidden="" id="qr-canvas"></canvas>
+
+        <div id="qr-result" hidden="">
+            <b>Data:</b> <span id="outputData"></span>
+        </div>
+
+    </div>
+
+</section>
